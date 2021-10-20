@@ -1,1 +1,1 @@
-# Arquivos do Curso de Formação Full-Stack Thaigo Medeiros
+## Arquivos do Curso de Formação Full-Stack Thiago Medeiros
