@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="salvar.html" method="GET">
+        <fieldset>
+            <legend>Dados do usuário</legend>
+
+            <label for="">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite o seu nome">
+            <br><br>
+
+            <label for="">E-mail:</label>
+            <input type="email" name="e-mail" placeholder="Digite o seu e-mail">
+            <br><br>
+
+            <label for="">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha">
+            <br><br>
+
+
+            <label>Sexo:</label><br>
+            <input type="radio" name="sexo" value="masculino" id=""><label>Masculino</label><br>
+            <input type="radio" name="sexo" value="feminino" id=""><label>Feminino</label><br>
+            <input type="radio" name="sexo" value="nao definido" id=""><label>Prefiro não informar</label>
+            <br><br>
+
+            <label for="">Habilidades</label>
+            <br>
+            <input type="checkbox" name="habilidades" value="html" id="html"><label for="html">HTML</label>
+            <br>
+            <input type="checkbox" name="habilidades" value="css" id="css"><label for="css">CSS</label>
+            <br>
+            <input type="checkbox" name="habilidades" value="javascript" id="javascript"><label for="javascript">Javascript</label>
+            <br><br>
+
+            <label>Cidade:</label>
+            <select name="estado" id="">
+            <option value="branco" selected> -- Selecione -- </option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+        </select>
+            <br><br>
+
+            <label for="">Selecione seu carro:</label>
+            <select name="carro" id="">
+            <optgroup label="Honda">
+                <option value="Civic">Civic</option>
+            </optgroup>
+            <optgroup label="Fiat">
+                <option value="Uno">Uno</option>
+            </optgroup>
+            <optgroup label="GM">
+                <option value="Celta">Celta</option>
+            </optgroup>
+        </select>
+            <br><br>
+
+            <label for="">Digite sua fruta preferida:</label>
+            <input list="listaFrutas" type="text" name="frutas" id="">
+            <datalist id="listaFrutas">
+            <option value="Abacate">
+            <option value="Abacaxi">
+            <option value="Laranja">
+            <option value="Morango">
+            <option value="Jaca">
+        </datalist>
+            <br><br>
+
+            <label for="">Digite uma mensagem:</label><br>
+            <textarea name="mensagem" id="" cols="50" rows="10"></textarea>
+            <br><br>
+
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
