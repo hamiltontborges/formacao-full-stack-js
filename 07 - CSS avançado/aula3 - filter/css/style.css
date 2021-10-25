@@ -1,0 +1,5 @@
+img {
+    filter: brightness(100%);
+    filter: grayscale(50%);
+    filter: sepia(50%);
+}
