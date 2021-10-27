@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container .box .success, .container .box .danger, .container .box .warning {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  color: aliceblue;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .box {
+  padding: 20px;
+  width: 30%;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 8px;
+}
+
+.container .box.active {
+  background-color: red;
+}
+
+.container .box h2 {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* pode ser feito dessa maneira */
+}
+
+.container .box p {
+  font-size: 18px;
+}
+
+.container .box p.hidden {
+  display: none;
+}
+
+.container .box ul {
+  margin: 30px;
+  padding: 10px;
+  list-style: square;
+  /*passando valores*/
+  /*@include reset-list(); sem passar valores, usará o padrão*/
+}
+
+.container .box a {
+  color: green;
+}
+
+.container .box a:hover {
+  color: yellow;
+}
+
+.container .box a:hover + p.hidden {
+  display: block;
+}
+
+.container .box .success {
+  background-color: green;
+}
+
+.container .box .danger {
+  background-color: red;
+}
+
+.container .box .warning {
+  background-color: yellow;
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

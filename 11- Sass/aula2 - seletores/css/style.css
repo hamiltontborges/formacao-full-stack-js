@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .box {
+  padding: 20px;
+  width: 30%;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 8px;
+}
+
+.container .box.active {
+  background-color: red;
+}
+
+.container .box h2 {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* pode ser feito dessa maneira */
+}
+
+.container .box p {
+  font-size: 18px;
+}
+
+.container .box p.hidden {
+  display: none;
+}
+
+.container .box a {
+  color: green;
+}
+
+.container .box a:hover {
+  color: yellow;
+}
+
+.container .box a:hover + p.hidden {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

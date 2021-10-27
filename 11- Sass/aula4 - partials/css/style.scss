@@ -1,0 +1,52 @@
+@import 'variables';
+@import 'base';
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+    .box {
+        padding: $padding-default;
+        width: 30%;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 8px;
+
+        &.active {
+            background-color: $color-secondary;
+        }
+
+        h2 {
+            font-size: 22px;
+
+            margin: {
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                /* pode ser feito dessa maneira */
+            }
+        }
+
+        p {
+            font-size: 18px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        a {
+            color: green;
+
+            &:hover {
+                color: yellow;
+
+                & + p.hidden {
+                    display: block;
+                }
+            }
+        }
+    }
+}
