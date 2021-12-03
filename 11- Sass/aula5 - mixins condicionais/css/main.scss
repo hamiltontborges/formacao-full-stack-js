@@ -2,20 +2,25 @@
 @import 'base';
 @import 'mixins';
 @import 'extends';
+
 .container {
     display: flex;
     justify-content: space-around;
+
     .box {
         padding: $padding-default;
         width: 30%;
         background-color: aliceblue;
         color: black;
         border-radius: 8px;
+
         &.active {
             background-color: $color-secondary;
         }
+
         h2 {
             font-size: 22px;
+
             margin: {
                 top: 10px;
                 left: 10px;
@@ -24,34 +29,43 @@
                 /* pode ser feito dessa maneira */
             }
         }
+
         p {
             font-size: 18px;
+
             &.hidden {
                 display: none;
             }
         }
+
         ul {
             @include reset-list(30px, 10px, square);
             /*passando valores*/
             /*@include reset-list(); sem passar valores, usará o padrão*/
         }
+
         a {
             color: green;
+
             &:hover {
                 color: yellow;
+
                 &+p.hidden {
                     display: block;
                 }
             }
         }
+
         .success {
             @extend %box-alert;
             @include bg-effect(success);
         }
+
         .danger {
             @extend %box-alert;
             @include bg-effect(danger);
         }
+
         .warning {
             @extend %box-alert;
             @include bg-effect(warning);

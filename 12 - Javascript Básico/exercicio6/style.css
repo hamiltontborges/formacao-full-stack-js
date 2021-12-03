@@ -15,7 +15,8 @@
 .container .ator {
     margin: 10px;
     padding: 20px;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
     box-shadow: 2px 2px 3px black;
     max-width: 30%;
 }
