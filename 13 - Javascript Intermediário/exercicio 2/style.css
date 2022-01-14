@@ -1,0 +1,44 @@
+div {
+    text-align: center;
+}
+
+#contador {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+
+#btnMais, #btnMenos, #btnStop, #btnClear {
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#btnMais, #btnMenos {
+    font-size: 3rem;
+}
+
+#btnMenos:hover {
+    background-color: rgb(241, 136, 136);
+}
+
+#btnMais:hover {
+    background-color: rgb(144, 214, 144);
+}
+
+#btnMenos:active, #btnMenos.ativo {
+    background-color: red;
+}
+
+#btnMais:active, #btnMais.ativo {
+    background-color: green;
+}
+
+#btnStop, #btnClear {
+    font-size: 1.5rem;
+}
+
+#btnStop:active, #btnClear:active {
+    background-color: rgb(170, 221, 255);
+}
