@@ -8,20 +8,20 @@ ROTAS ou ENDPOINT - caminho para obter informação
 
 const xhttp = new XMLHttpRequest()
 
-const divAlbuns = document.querySelector('.div-photos')
+const divPhotos = document.querySelector('.div-photos')
 let listPhotos = []
 
 function printCards(response) {
-    response.forEach(photo => {
-        listPhotos += `
-        <div class="card">
-            <img src="${photo.thumbnailUrl}" alt="">
-            <h5 class="titulo">${photo.title}</h5>
-        </div>
-        `
-    })
-
-    divAlbuns.innerHTML = listPhotos
+        response.forEach(photo => {
+            listPhotos += `
+            <div class="card">
+                <img src="${photo.thumbnailUrl}" alt="">
+                <h5 class="titulo">${photo.title}</h5>
+            </div>
+            `
+        })
+        
+    divPhotos.innerHTML = listPhotos
 }
 
 xhttp.onreadystatechange = function () {
