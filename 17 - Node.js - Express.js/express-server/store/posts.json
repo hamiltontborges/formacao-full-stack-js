@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Novidade no mundo da tecnologia",
+        "text": "Donec mauris dui, molestie eu egestas fermentum, lacinia in augue. Donec blandit quis leo et consectetur. Sed consequat vulputate purus, sed auctor tortor volutpat vitae. In neque erat, imperdiet at sem ut, lobortis condimentum orci. Donec tempus ut enim nec volutpat. Duis aliquet ante sapien, pharetra dictum magna pretium eu. Vestibulum ut arcu at velit molestie sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque blandit dolor in risus suscipit, id eleifend urna finibus.",
+        "stars": 3
+    },
+    {
+        "title": "Homem vai à lua de bicicleta",
+        "text": "Donec mauris dui, molestie eu egestas fermentum, lacinia in augue. Donec blandit quis leo et consectetur. Sed consequat vulputate purus, sed auctor tortor volutpat vitae. In neque erat, imperdiet at sem ut, lobortis condimentum orci. Donec tempus ut enim nec volutpat. Duis aliquet ante sapien, pharetra dictum magna pretium eu. Vestibulum ut arcu at velit molestie sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque blandit dolor in risus suscipit, id eleifend urna finibus."
+    },
+    {
+        "title": "Cachorro separa briga de Ursos Polares",
+        "text": "Donec mauris dui, molestie eu egestas fermentum, lacinia in augue. Donec blandit quis leo et consectetur. Sed consequat vulputate purus, sed auctor tortor volutpat vitae. In neque erat, imperdiet at sem ut, lobortis condimentum orci. Donec tempus ut enim nec volutpat. Duis aliquet ante sapien, pharetra dictum magna pretium eu. Vestibulum ut arcu at velit molestie sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque blandit dolor in risus suscipit, id eleifend urna finibus.",
+        "stars": 5
+    }
+]
