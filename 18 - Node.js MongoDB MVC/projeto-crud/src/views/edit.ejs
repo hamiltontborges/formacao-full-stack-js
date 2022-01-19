@@ -9,29 +9,26 @@
         <h1>
             <%= title %>
         </h1>
+        <hr>
 
         <% if (typeof message !== 'undefined') { %>
             <div class="cadastro-realizado"><%= message %></div>
         <% } %>
-
-        <form action="/register/add" method="POST" class='formulario'>
+        
+        <form action="/edit/<%= user._id %>" method="POST" class='formulario'>
             <div>
                 <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu nome">
+                <input type="text" name="name" placeholder="Digite seu nome" value="<%= user.name %>">
             </div>
             <div>
                 <label>Idade</label>
-                <input type="text" name="age" placeholder="Digite seu idade">
+                <input type="text" name="age" placeholder="Digite seu idade" value="<%= user.age %>">
             </div>
             <div>
                 <label>Email</label>
-                <input type="text" name="email" placeholder="Digite seu email">
+                <input type="text" name="email" placeholder="Digite seu email" value="<%= user.email %>">
             </div>
-            <div>
-                <label>Senha</label>
-                <input type="password" name="password" placeholder="Digite sua senha">
-            </div>
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Editar</button>
         </form>
 
         <%- include('partials/foot.ejs') %>
