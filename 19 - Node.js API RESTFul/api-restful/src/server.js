@@ -20,6 +20,7 @@ const allowedOrigins = [
     'http://www.app.com.br',
 ]
 
+
 app.use(cors({
     origin: function(origin, callback) {
         let allowed = true
@@ -33,14 +34,14 @@ app.use(cors({
     }
 }))
 
-/*
-& ou de maneira simples 
+/* 
+ & ou de maneira simples 
 
 app.use(cors({
     origin: 'http://127.0.0.1:5500'
 }))
 
-*/
+ */
 
 // habilita server para receber dados json
 app.use(express.json())
