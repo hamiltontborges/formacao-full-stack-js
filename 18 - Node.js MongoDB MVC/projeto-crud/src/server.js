@@ -15,6 +15,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 // definindo os aruivos públicos
+console.log(__dirname)
 app.use(express.static(path.join(__dirname, 'public')))
 
 // habilita server para receber dados via post (formulário)
