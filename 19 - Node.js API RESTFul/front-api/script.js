@@ -152,6 +152,7 @@ formEdit.onsubmit = function(e) {
                 formEdit.reset()
                 edit.classList.add('hidden')
                 cadastro.classList.remove('hidden')
+
                 obterLista()
             } else {
                 alert('Ops, ocorreu um erro. Tente novamente!')
