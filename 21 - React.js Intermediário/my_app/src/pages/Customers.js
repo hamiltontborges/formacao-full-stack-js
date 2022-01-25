@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Customers = () => {
-    const classes = useStyles()
+    const classes = useStyles();
     const [customers, setCustomers] = useState([]);
 
     console.log(customers)
@@ -27,9 +27,9 @@ const Customers = () => {
     useEffect(() => {
         axios.get('https://reqres.in/api/users')
             .then(response => {
-                const { data } = response.data
+                const { data } = response.data;
 
-                setCustomers(data)
+                setCustomers(data);
             })
     }, [])
 
