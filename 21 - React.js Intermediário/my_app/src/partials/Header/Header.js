@@ -61,7 +61,7 @@ const Header = () => {
                         <ListItemIcon><PersonIcon/></ListItemIcon>
                         <ListItemText>Clientes</ListItemText>
                     </ListItem>
-                    <ListItem button>
+                    <ListItem button onClick={() => handleMenuClick('/customers/add')}>
                         <ListItemIcon><PersonAddIcon/></ListItemIcon>
                         <ListItemText>Cadastro de Clientes</ListItemText>
                     </ListItem>

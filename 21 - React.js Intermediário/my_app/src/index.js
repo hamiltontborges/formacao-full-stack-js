@@ -9,7 +9,7 @@ import './index.css'
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: deepPurple[900]
+      main: deepPurple[700]
     },
     secondary: {
       main: amber[600]
