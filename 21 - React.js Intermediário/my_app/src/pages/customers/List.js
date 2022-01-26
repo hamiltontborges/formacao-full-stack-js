@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import axios from 'axios'
 
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles'
 
 import { Grid } from '@material-ui/core'
 
-import CustomerCard from '../../components/CustomerCard';
+import CustomerCard from '../../components/CustomerCard'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -15,19 +16,21 @@ const useStyles = makeStyles((theme) => ({
     card: {
         margin: theme.spacing(2),
     },
-}));
+}))
 
 
 const List = () => {
-    const classes = useStyles();
-    const [customers, setCustomers] = useState([]);
+    const classes = useStyles()
+    const history = useHistory()
+
+    const [customers, setCustomers] = useState([])
 
     useEffect(() => {
         axios.get('https://reqres.in/api/users')
             .then(response => {
-                const { data } = response.data;
+                const { data } = response.data
 
-                setCustomers(data);
+                setCustomers(data)
             })
     }, [])
 
@@ -39,6 +42,10 @@ const List = () => {
 
                 setCustomers(newCustomerState)
             })
+    }
+
+    const handleEditCustomer = id => {
+        history.push(`/customers/edit/${id}`)
     }
 
     return (
@@ -54,6 +61,7 @@ const List = () => {
                             avatar={item.avatar}
                             className={classes.card}
                             onRemoveCustomer={handleRemoveCustomer}
+                            onEditCustomer={handleEditCustomer}
                         />
                     </Grid>
                 ))
@@ -62,4 +70,4 @@ const List = () => {
     )
 }
 
-export default List;
+export default List
