@@ -26,6 +26,8 @@ const Login = () => {
 
     const { user, setUser } = useAuth()
 
+    console.log(user)
+
     const handleInputChange = e => {
         const { name, value } = e.target
 
