@@ -1,8 +1,6 @@
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles'; 
 
-import Header from "../partials/Header/Header"
-import useAuth from '../state/auth';
 
 const useStyles = makeStyles(() => ({
     content: {
@@ -10,20 +8,17 @@ const useStyles = makeStyles(() => ({
     }
 }))
 
-const Default = ({ children }) => {
+const Clean = ({ Component }) => {
 
     const classes = useStyles()
 
-    const { user } = useAuth()
-
     return (
         <>
-            <Header user={user}/> 
             <Container maxWidth="md" className={classes.content}>
-                {children}
+                <Component />
             </Container>
         </>
     )
 }
 
-export default Default
+export default Clean

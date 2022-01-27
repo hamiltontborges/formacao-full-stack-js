@@ -5,6 +5,7 @@ import { deepPurple, amber } from '@material-ui/core/colors';
 
 import App from './App';
 import './index.css'
+import { AuthProvider } from './state/auth';
 
 const theme = createMuiTheme({
   palette: {
@@ -19,9 +20,11 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <React.StrictMode>
+    <AuthProvider>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
